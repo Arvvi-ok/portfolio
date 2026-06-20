@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arvi - AI Specialist & Digital Expert Portfolio. Engineering custom web architectures, AI integration, MVPs, and software automation.">
+    <title>Arvi — AI Specialist & Digital Expert</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Cosmos Parallax Particles -->
+    <canvas id="cosmos-canvas"></canvas>
+
+    <!-- Background Glows -->
+    <div class="bg-glow bg-glow-top-left" id="glow-1"></div>
+    <div class="bg-glow bg-glow-bottom-right" id="glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="main-header">
+        <div class="header-container">
+            <a href="#" class="logo" id="header-logo" aria-label="Arvi Logo">
+                <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 80L50 20L80 80" stroke="url(#logo-grad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M35 50H65" stroke="url(#logo-grad)" stroke-width="8" stroke-linecap="round"/>
+                    <defs>
+                        <linearGradient id="logo-grad" x1="20" y1="20" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#a78bfa" />
+                            <stop offset="1" stop-color="#6366f1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </a>
+            
+            <nav class="nav-menu" id="nav-navigation">
+                <a href="#about" class="nav-link active" id="nav-link-about">ABOUT</a>
+                <a href="#work" class="nav-link" id="nav-link-work">WORK</a>
+                <a href="#services" class="nav-link" id="nav-link-services">SERVICES</a>
+                <a href="#contact" class="nav-link" id="nav-link-contact">CONTACT</a>
+            </nav>
+
+            <a href="https://t.me/aclhemists" target="_blank" rel="noopener noreferrer" class="btn btn-talk" id="btn-lets-talk">
+                LET'S TALK
+                <svg class="plus-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="about">
+        <div class="hero-container">
+            <div class="hero-content reveal">
+                <span class="hero-subtitle animate-flicker" id="hero-welcome">HEY, I'M ARVI</span>
+                <h1 class="hero-title" id="hero-main-heading">
+                    AI Specialist<br>& Digital <span class="gradient-text">Expert</span>
+                </h1>
+                <p class="hero-description" id="hero-intro-text">
+                    I engineer intelligent systems, custom web architectures, and automation tools that scale businesses.
+                </p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-work" id="btn-view-work">
+                        <span>VIEW MY WORK</span>
+                        <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual reveal" id="hero-visual-area">
+                <div class="orb-container">
+                    <div class="orb-orbit">
+                        <div class="orbit-node"></div>
+                    </div>
+                    <div class="orb-orbit orbit-reverse">
+                        <div class="orbit-node"></div>
+                    </div>
+                    <div class="orb-core"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-section" id="trusted-brands">
+        <div class="trusted-container reveal">
+            <span class="trusted-title">TRUSTED BY</span>
+            <div class="trusted-logos">
+                <div class="logo-item" id="logo-coinbase">coinbase</div>
+                <div class="logo-item" id="logo-webflow">webflow</div>
+                <div class="logo-item" id="logo-zapier">_zapier</div>
+                <div class="logo-item" id="logo-slack">
+                    <span class="slack-hash">#</span>slack
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Skills Section -->
+    <section class="services-skills-section" id="services">
+        <div class="services-skills-container">
+            <!-- Services Column -->
+            <div class="services-col">
+                <span class="section-subtitle reveal">WHAT I DO</span>
+                <h2 class="section-title reveal">
+                    Engineering solutions<br>that drive <span class="accent-text">growth.</span>
+                </h2>
+                
+                <div class="services-grid">
+                    <!-- Card 1 -->
+                    <div class="service-card reveal" id="service-ai-dev">
+                        <div class="service-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2v4M12 18v4M4 12H2M22 12h-2M20 20l-2-2M6 6L4 4M20 4l-2 2M6 18l-2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <rect x="8" y="8" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">AI Integration</h3>
+                        <p class="service-desc">Building custom AI agents, LLM pipelines, and automated intelligence into products.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="service-card reveal" id="service-web-mvp">
+                        <div class="service-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 18l6-6-6-6M8 6L2 12l6 6M14 4l-4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Web & MVPs</h3>
+                        <p class="service-desc">Developing fast, responsive websites and functional MVP products to launch quickly.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="service-card reveal" id="service-custom-software">
+                        <div class="service-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M7 8l3 3-3 3M13 14h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Software & Tools</h3>
+                        <p class="service-desc">Creating tailor-made software, automation utilities, and scripting solutions.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="service-card reveal" id="service-mini-apps">
+                        <div class="service-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="5" y="2" width="14" height="20" rx="3" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 18h.01M9 6h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Mini-Apps & Bots</h3>
+                        <p class="service-desc">Developing Telegram Mini Apps, web applications, and automated API integrations.</p>
+                    </div>
+                </div>
+
+                <a href="#services" class="explore-services-link reveal" id="link-explore-services">
+                    EXPLORE SERVICES
+                    <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Skills Column -->
+            <div class="skills-col">
+                <span class="section-subtitle reveal">MY SKILLS</span>
+                <div class="skills-list" id="skills-list-container">
+                    <!-- Skill 1 -->
+                    <div class="skill-item reveal">
+                        <div class="skill-info">
+                            <span class="skill-name">AI Integration & LLMs</span>
+                            <span class="skill-percentage" data-target="95">0%</span>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-bar" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2 -->
+                    <div class="skill-item reveal">
+                        <div class="skill-info">
+                            <span class="skill-name">Web & MVP Development</span>
+                            <span class="skill-percentage" data-target="92">0%</span>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-bar" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 3 -->
+                    <div class="skill-item reveal">
+                        <div class="skill-info">
+                            <span class="skill-name">Software Engineering</span>
+                            <span class="skill-percentage" data-target="90">0%</span>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-bar" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 4 -->
+                    <div class="skill-item reveal">
+                        <div class="skill-info">
+                            <span class="skill-name">Automation & Scripting</span>
+                            <span class="skill-percentage" data-target="88">0%</span>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-bar" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 5 -->
+                    <div class="skill-item reveal">
+                        <div class="skill-info">
+                            <span class="skill-name">Telegram Mini Apps</span>
+                            <span class="skill-percentage" data-target="85">0%</span>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-bar" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Work Section -->
+    <section class="recent-work-section" id="work">
+        <div class="recent-work-container">
+            <div class="recent-work-header">
+                <div>
+                    <span class="section-subtitle reveal">RECENT WORK</span>
+                    <h2 class="section-title reveal">
+                        Selected <span class="accent-text">projects.</span>
+                    </h2>
+                </div>
+                <a href="#work" class="btn btn-all-projects reveal" id="btn-view-projects">
+                    <span>VIEW ALL PROJECTS</span>
+                    <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Project Cards Grid -->
+            <div class="projects-grid">
+                <!-- Card 1 -->
+                <div class="project-card reveal" id="project-card-neobank">
+                    <div class="project-img-wrapper">
+                        <img src="./neobank.png" alt="AI Financial Analytics Dashboard Mockup" class="project-img">
+                        <div class="project-hover-overlay"></div>
+                    </div>
+                    <div class="project-meta">
+                        <div>
+                            <span class="project-category">AI & FINTECH</span>
+                            <h3 class="project-name">AI Financial Analytics</h3>
+                        </div>
+                        <div class="project-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="project-card reveal" id="project-card-saas">
+                    <div class="project-img-wrapper">
+                        <img src="./project_management.png" alt="Analytics SaaS platform Mockup" class="project-img">
+                        <div class="project-hover-overlay"></div>
+                    </div>
+                    <div class="project-meta">
+                        <div>
+                            <span class="project-category">CUSTOM SAAS</span>
+                            <h3 class="project-name">Smart Analytics SaaS</h3>
+                        </div>
+                        <div class="project-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="project-card reveal" id="project-card-sneakers">
+                    <div class="project-img-wrapper">
+                        <img src="./sneakers.png" alt="E-Commerce Mobile Mini App Mockup" class="project-img">
+                        <div class="project-hover-overlay"></div>
+                    </div>
+                    <div class="project-meta">
+                        <div>
+                            <span class="project-category">TELEGRAM MINI-APP</span>
+                            <h3 class="project-name">E-Commerce Mini App</h3>
+                        </div>
+                        <div class="project-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer class="footer-section" id="contact">
+        <div class="footer-container">
+            <h2 class="footer-cta reveal">Let's create something<br><span class="gradient-text">extraordinary</span> together.</h2>
+            <a href="https://t.me/aclhemists" target="_blank" rel="noopener noreferrer" class="btn btn-talk btn-large reveal" id="btn-footer-telegram">
+                Telegram: @aclhemists
+            </a>
+            <div class="footer-bottom reveal">
+                <span class="copyright">© 2026 Arvi. All rights reserved.</span>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+                    <a href="https://t.me/aclhemists" target="_blank" rel="noopener noreferrer" class="social-link">Telegram</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll (Lenis) -->
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <!-- Main JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
