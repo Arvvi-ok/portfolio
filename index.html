@@ -75,6 +75,7 @@
             </div>
             
             <div class="hero-visual reveal" id="hero-visual-area">
+                <!-- Glowing Liquid Orb behind the terminal -->
                 <div class="orb-container">
                     <div class="orb-orbit">
                         <div class="orbit-node"></div>
@@ -83,6 +84,39 @@
                         <div class="orbit-node"></div>
                     </div>
                     <div class="orb-core"></div>
+                    <div class="orb-core-secondary"></div>
+                </div>
+
+                <!-- Interactive Glassmorphic AI Terminal -->
+                <div class="terminal-window" id="ai-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="terminal-dot dot-red"></span>
+                            <span class="terminal-dot dot-yellow"></span>
+                            <span class="terminal-dot dot-green"></span>
+                        </div>
+                        <div class="terminal-title">arvi-agent@core: ~</div>
+                        <div class="terminal-status"><span class="status-pulse"></span>ONLINE</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-output" id="terminal-output">
+                            <div class="terminal-line"><span class="system-tag">[SYS]</span> Initializing Arvi AI Core v1.2.0...</div>
+                            <div class="terminal-line"><span class="system-tag">[SYS]</span> Status: <span class="text-green">OPTIMAL</span> (latency 12ms)</div>
+                            <div class="terminal-line"><span class="system-tag">[SYS]</span> Neural Engine: Active & Listening</div>
+                            <div class="terminal-line"><span class="system-tag">[SYS]</span> Type 'help' or click a command below:</div>
+                        </div>
+                        <div class="terminal-input-line">
+                            <span class="terminal-prompt">arvi@core:~$</span>
+                            <input type="text" id="terminal-input" placeholder="Type a command..." autocomplete="off" aria-label="Terminal Input">
+                        </div>
+                        <div class="terminal-shortcuts">
+                            <button class="shortcut-btn" data-cmd="help">help</button>
+                            <button class="shortcut-btn" data-cmd="about">about</button>
+                            <button class="shortcut-btn" data-cmd="skills">skills</button>
+                            <button class="shortcut-btn" data-cmd="projects">projects</button>
+                            <button class="shortcut-btn" data-cmd="clear">clear</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,11 +127,34 @@
         <div class="trusted-container reveal">
             <span class="trusted-title">TRUSTED BY</span>
             <div class="trusted-logos">
-                <div class="logo-item" id="logo-coinbase">coinbase</div>
-                <div class="logo-item" id="logo-webflow">webflow</div>
-                <div class="logo-item" id="logo-zapier">_zapier</div>
-                <div class="logo-item" id="logo-slack">
-                    <span class="slack-hash">#</span>slack
+                <div class="logo-item" id="logo-coinbase" aria-label="Coinbase">
+                    <svg class="brand-logo-svg" viewBox="0 0 130 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#0052FF"/>
+                        <circle cx="16" cy="16" r="9" fill="#030008"/>
+                        <text x="42" y="22" fill="var(--text-white)" font-family="var(--font-sans)" font-weight="700" font-size="16" letter-spacing="-0.03em">coinbase</text>
+                    </svg>
+                </div>
+                <div class="logo-item" id="logo-webflow" aria-label="Webflow">
+                    <svg class="brand-logo-svg" viewBox="0 0 125 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 6L17.5 26H13L9.5 13L6 26H1.5L6.5 6H11L14.5 18L18 6H22Z" fill="#4353FF" />
+                        <text x="30" y="22" fill="var(--text-white)" font-family="var(--font-sans)" font-weight="700" font-size="17" letter-spacing="-0.04em">webflow</text>
+                    </svg>
+                </div>
+                <div class="logo-item" id="logo-zapier" aria-label="Zapier">
+                    <svg class="brand-logo-svg" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="7" width="16" height="16" rx="4" fill="#FF4F00"/>
+                        <path d="M10 11L7 19H13L10 11Z" fill="white" />
+                        <text x="28" y="22" fill="var(--text-white)" font-family="var(--font-sans)" font-weight="700" font-size="17" letter-spacing="-0.02em">zapier</text>
+                    </svg>
+                </div>
+                <div class="logo-item" id="logo-slack" aria-label="Slack">
+                    <svg class="brand-logo-svg" viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 13C5 11.3431 6.34315 10 8 10C9.65685 10 11 11.3431 11 13V16H8C6.34315 16 5 14.6569 5 13Z" fill="#36C5F0" />
+                        <path d="M8 19C6.34315 19 5 17.6569 5 16C5 14.3431 6.34315 13 8 13H11V16C11 17.6569 9.65685 19 8 19Z" fill="#2EB67D" />
+                        <path d="M14 13C14 11.3431 15.3431 10 17 10C18.6569 10 20 11.3431 20 13V16H17C15.3431 16 14 14.6569 14 13Z" fill="#ECB22E" />
+                        <path d="M17 7C15.3431 7 14 8.34315 14 10C14 11.6569 15.3431 13 17 13H20V10C20 8.34315 18.6569 7 17 7Z" fill="#E01E5A" />
+                        <text x="28" y="22" fill="var(--text-white)" font-family="var(--font-sans)" font-weight="800" font-size="17" letter-spacing="-0.03em">slack</text>
+                    </svg>
                 </div>
             </div>
         </div>
@@ -330,6 +387,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- Custom Glowing Cursor -->
+    <div class="custom-cursor" id="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
 
     <!-- Smooth Scroll (Lenis) -->
     <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
